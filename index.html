@@ -195,17 +195,65 @@
     </div>
     <div class="modal-container">
         <div class="modal modal-auth">
-            <button class="modal-close-button">
-                <span class="visually-hidden">Закрыть</span>
-              </button>
+
             <section class="modal-content">
-                <h2 class="modal-title">поиск гостиницы в седоне</h2>
+                <div class="modal-caption">
+                    <h2 class="modal-title">поиск гостиницы в седоне</h2>
+                    <button class="modal-close-button">
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                </div>
                 <form>
-                    <p class="modal-date"><span class="date-item">Дата заезда:</span> <input class="date-item" type="date" name="calendar"></p>
-                    <p class="modal-date-2"><span class="date-item-2">Дата выезда:</span> <input class="date-item-2" type="date" name="calendar"></p>
-                    <p class="adults"><span class="adults-item">Взрослые</span> <input type="number" min="1"></p>
-                    <p class="children"><span class="children-item">Дети</span> <input type="number"></p>
-                    <a class="modal-container-search" href="#"><span class="modal-cantainer-button">найти</span></a>
+                    <div class="modal-date-container">
+                        <p class="modal-date"><span class="date-item-inner">Дата заезда:</span> </p>
+                        <input class="date-item" type="date" name="calendar">
+                    </div>
+                    <p class="modal-date-slogan">Мы не можем отправить вас в прошлое.</p>
+                    <div class="date-container-2">
+
+                        <p class="modal-date-2"><span class="item-2">Дата выезда:</span> </p>
+                        <input class="date-item-2" type="date" name="calendar">
+                    </div>
+                    <p class="date-2-slogan">На эти даты есть свободные номера. Пока есть.</p>
+                    <div class="adults-children-section">
+                        <div class="adults-section">
+                            <p class="adults"><span class="adults-item">Взрослые:</span> </p>
+
+                            <div class="adults-inner">
+                                <button class="inner-button-minus">
+                            <svg class="adults-inner-picture minus" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/></svg>
+                        </button>
+                                <input class="adults-inner-item" type="text" value="2">
+                                <button class="inner-button-plus">
+                            <svg class="adults-inner-picture plus" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/></svg>
+                        </button>
+
+                            </div>
+                        </div>
+                        <div class="children-section">
+                            <p class="children"><span class="children-item">Дети:</span> </p>
+                            <button class="information"><span class="information-item">i</span></button>
+                            <div class="popover popover-cart">
+                                <div class="popover-ontent">
+
+                                </div>
+
+                            </div>
+                            <div class="adults-inner">
+                                <button class="inner-button-minus">
+                            <svg class="adults-inner-picture minus" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/></svg>
+                        </button>
+                                <input class="adults-inner-item" type="text" value="1">
+                                <button class="inner-button-plus">
+                            <svg class="adults-inner-picture plus" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/></svg>
+                        </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="modal-container-search" href="#"><span class="modal-container-button">найти</span></a>
 
                 </form>
             </section>
@@ -213,7 +261,9 @@
         </div>
 
 
-    </div>
+
+
+
 </body>
 
 </html>
